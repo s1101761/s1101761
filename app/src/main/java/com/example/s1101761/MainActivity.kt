@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -37,23 +38,22 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Column {
-
-        Text(text = "作者:資管二B $name!")
-        Box(
-            modifier = Modifier.fillMaxSize(),
-            contentAlignment = Alignment.Center
-        ) {
-
-            Image(
-                    painter = painterResource(id = R.drawable.map),
+    function()
+}
+@Composable
+fun function() {
+    Text(text = "作者:資管二B 顏偉森" )
+    Column(modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+    ) {
+        Image(
+            painter = painterResource(id = R.drawable.map),
             contentDescription = "手掌圖片",
-            )
-        }
-
-
+        )
     }
 }
+
+
 
 @Preview(showBackground = true)
 @Composable
