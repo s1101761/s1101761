@@ -10,8 +10,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.S1101761"
+        android:gravity="center"
         tools:targetApi="31">
         <activity
+            android:layout_gravity="center"
             android:name=".MainActivity"
             android:screenOrientation="landscape"
             android:exported="true"
